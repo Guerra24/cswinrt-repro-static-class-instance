@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="2f7dc1e9-7908-4983-8a46-f2b86b7953b3" />
+  <Project Path="Projection/Projection.csproj" Id="007eabe5-1897-4673-8bec-eb42bafd0ee2" />
+  <Project Path="RuntimeComponent1/RuntimeComponent1.vcxproj" Id="7dbdb40f-efe8-42a0-b68a-9230fcfef567" />
+</Solution>

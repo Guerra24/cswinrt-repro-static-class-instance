@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0-windows10.0.26100.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseUwp>true</UseUwp>
+    <UseUwpTools>false</UseUwpTools>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <IsAotCompatible>true</IsAotCompatible>
+    <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
+    <WindowsSdkPackageVersion>10.0.26100.87</WindowsSdkPackageVersion>
+    <CsWinRTIncludes>RuntimeComponent1</CsWinRTIncludes>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RuntimeComponent1\RuntimeComponent1.vcxproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+namespace RuntimeComponent1
+{
+
+    [contractversion(1)]
+    apicontract BarContract
+    {
+    };
+
+    [contract(RuntimeComponent1.BarContract, 1)]
+    [default_interface]
+    runtimeclass BarInfoChangedEventArgs
+    {
+    };
+
+    [contract(RuntimeComponent1.BarContract, 1)]
+    runtimeclass BarInfo
+    {
+        String Something{ get; };
+    };
+
+    [contract(RuntimeComponent1.BarContract, 1)]
+    static runtimeclass Bar
+    {
+        static BarInfo GetBarInfo();
+        static event Windows.Foundation.EventHandler<BarInfoChangedEventArgs> BarInfoChanged;
+        static void FireEvent();
+    };
+
+}
